@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>WhatsApp Web QR Code</title>
+  <style>
+    img {
+      display: block;
+      margin: 0 auto;
+      width: 300px;
+      height: 300px;
+    }
+  </style>
+</head>
+<body>
+  <h1>WhatsApp Web QR Code</h1>
+  <div id="qrCodeContainer"></div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.3.1/socket.io.js"></script>
+  <script>
+    const socket = io('http://localhost:3000');
+    const qrCodeContainer = document.getElementById('qrCodeContainer');
+
+    socket.on('qr', (qrCode) => {
+      const qrImg = document.createElement('img');
+      qrImg.src = qrCode;
+      qrCodeContainer.innerHTML = '';
+      qrCodeContainer.appendChild(qrImg);
+    });
+  </script>
+</body>
+</html>
