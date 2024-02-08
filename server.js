@@ -113,19 +113,19 @@ client.on('message', async(msg) => {
     console.log(kalimat_2 + '\r\nAyo kunjungi website https://webflazz.com');
 
     switch(msg.from) {
-        case '6282111992462@c.us':
+        case '***@c.us':
             client.sendMessage(msg.from, kalimat_2 + '\r\nAyo kunjungi website https://webflazz.com');    
         break;
-        case '62818198145@c.us':
+        case '***@c.us':
             client.sendMessage(msg.from, kalimat_2 + '\r\nAyo kunjungi website https://webflazz.com');    
         break;
-        case '6285777820966@c.us':
+        case '***@c.us':
             client.sendMessage(msg.from, kalimat_2 + '\r\nAyo kunjungi website https://webflazz.com');    
         break;
-        case '628995535300@c.us':
+        case '***@c.us':
             client.sendMessage(msg.from, kalimat_2 + '\r\nAyo kunjungi website https://webflazz.com');    
         break;
-        case '62819888502@c.us':
+        case '***@c.us':
             client.sendMessage(msg.from, kalimat_2 + '\r\nAyo kunjungi website https://webflazz.com');    
         break;
         default: 
